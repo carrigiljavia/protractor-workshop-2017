@@ -17,7 +17,8 @@
   "scripts": {
     "__pretest": "webdriver-manager update",
     "__test": "protractor protractor.config.js",
-    "clean": "del dist",
+    "__windows_clean": "del dist",
+    "clean":"rm -rf dist",
     "prebuild": "npm run clean",
     "build": "tsc",
     "test:local": "npm run build && protractor dist/protractor/config.js",
